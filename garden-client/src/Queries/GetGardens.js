@@ -2,7 +2,7 @@ import React from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 
-import GardenView from "../Components/GardenView"
+import GardenView from "../Components/GardenView";
 
 import { getGardens } from "./queryStrings";
 
@@ -17,13 +17,10 @@ const GetProfile = () => (
         return null;
       }
       if (data) {
-        console.log( data)
-        return (
-          <GardenView data={data}/>
-        );
-      } else {
-        return null;
+        console.log(data);
+        return <GardenView data={data} />;
       }
+      return null;
     }}
   </Query>
 );
