@@ -1,15 +1,20 @@
-import React, { Component } from "react"
+import React, { Component } from "react";
+
+import { Button } from "semantic-ui-react";
 
 class GardenView extends Component {
-  constructor(props){
+  constructor(props) {
     super();
-    this.state = {
-    }
+    this.state = {};
   }
 
-  render(){
-    return(<div> Sup</div>);
+  render() {
+    return (
+      <div>
+        <Button>Click Here</Button>
+      </div>
+    );
   }
 }
 
-export default GardenView
+export default GardenView;
